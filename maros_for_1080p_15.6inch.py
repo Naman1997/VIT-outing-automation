@@ -75,13 +75,13 @@ pyautogui.click(x=800,y=576)#Reason
 pyautogui.typewrite('Shopping')
 
 pyautogui.click(x=800,y=601)#Mobile Number
-pyautogui.typewrite('9690479443')
+pyautogui.typewrite('#Your_number')
 
 pyautogui.click(x=800,y=621)#Parent Mobile Number
-pyautogui.typewrite('9837031637')
+pyautogui.typewrite('#Your_parent_number')
 
 pyautogui.click(x=800,y=667)#Faculty Number
-pyautogui.typewrite('9840119868')
+pyautogui.typewrite('#Your_faculty_number')
 
 pyautogui.click(x=878,y=402)#Exit Date
 
@@ -127,13 +127,13 @@ pyautogui.click(x=800,y=576)#Reason
 pyautogui.typewrite('Shopping')
 
 pyautogui.click(x=800,y=601)#Mobile Number
-pyautogui.typewrite('9690479443')
+pyautogui.typewrite('#Your_number')
 
 pyautogui.click(x=800,y=621)#Parent Mobile Number
-pyautogui.typewrite('9837031637')
+pyautogui.typewrite('#Your_parent_number')
 
 pyautogui.click(x=800,y=667)#Faculty Number
-pyautogui.typewrite('9840119868')
+pyautogui.typewrite('#Your_faculty_number')
 
 pyautogui.click(x=878,y=402)#Exit Date
 
