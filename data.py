@@ -20,9 +20,9 @@ alert_obj.accept()
 
 
 pyautogui.click(x=909,y=386)
-pyautogui.typewrite('16BLC1030')
+pyautogui.typewrite('#Your Registration Number')
 pyautogui.click(x=950,y=421)
-pyautogui.typewrite('United@123')
+pyautogui.typewrite('#Your Password')
 
 driver.execute_script(open("C:\\Users\\Naman\\Desktop\\Scraper\\value.js").read())
 
