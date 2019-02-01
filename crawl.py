@@ -7,7 +7,6 @@ import random
 import datetime
 
 def fill():
-	print("yolo")
 	#Selecting approving authority
 	approving_auth = driver.find_element_by_xpath("/html/body/table/tbody/tr/td[2]/form/table/tbody/tr[2]/td[2]/select/option[2]")
 	approving_auth.click()
@@ -25,17 +24,17 @@ def fill():
 	reason_holder.send_keys(reason_value)
 	
 	#Entering mobile number
-	mobile_number = '9690479443'
+	mobile_number = '#Your_Number'
 	mobile_holder = driver.find_element_by_xpath("/html/body/table/tbody/tr/td[2]/form/table/tbody/tr[7]/td[2]/input")
 	mobile_holder.send_keys(mobile_number)
 	
 	#Entering parent mobile number
-	parent_number = '9837031637'
+	parent_number = '#Your_parent_number'
 	number_holder = driver.find_element_by_xpath("/html/body/table/tbody/tr/td[2]/form/table/tbody/tr[8]/td[2]/input")
 	number_holder.send_keys(parent_number)
 	
 	#Entering faculty mobile number
-	faculty_number = '9840119868'
+	faculty_number = '#Your_faculty_number'
 	faculty_holder = driver.find_element_by_xpath("/html/body/table/tbody/tr/td[2]/form/table/tbody/tr[10]/td[2]/input")
 	faculty_holder.send_keys(faculty_number)
 	
@@ -87,11 +86,11 @@ alert_obj = driver.switch_to.alert
 alert_obj.accept()
 
 regno = driver.find_element_by_name("regno")
-regno.send_keys("16BLC1030")
+regno.send_keys("#Your_regno")
 
 
 passw = driver.find_element_by_name("passwd")
-passw.send_keys("United@123")
+passw.send_keys("#Your_password")
 
 
 driver.execute_script(open("C:\\Users\\Naman\\Desktop\\Scraper\\value.js").read())
