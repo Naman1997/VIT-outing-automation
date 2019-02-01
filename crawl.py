@@ -38,9 +38,6 @@ def fill():
 	faculty_holder = driver.find_element_by_xpath("/html/body/table/tbody/tr/td[2]/form/table/tbody/tr[10]/td[2]/input")
 	faculty_holder.send_keys(faculty_number)
 	
-	#Clicking on date button
-	#date_holder = driver.find_element_by_xpath("//*[@id='txtHint']/table/tbody/tr[1]/td[2]/a/img")
-	#date_holder.click()
 	
 def time_fill():
 	#Fills exit and entry time as 8am and 6pm respectively
@@ -74,7 +71,7 @@ path2 ='//*[@id="calBorder"]/span/table/tbody/tr[2]/td/table/tbody/tr['+str(week
 
 valve = int(input("2 for both saturday and sunday, 1 for saturday and 0 for sunday : "))
 print(valve)
-driver = webdriver.Chrome(executable_path='C:\\Users\\Naman\\Desktop\\Web_Crawler\\chromedriver.exe')
+driver = webdriver.Chrome(executable_path='#Location_of_chromedriver.exe')
 
 options = webdriver.ChromeOptions()
 
@@ -93,7 +90,7 @@ passw = driver.find_element_by_name("passwd")
 passw.send_keys("#Your_password")
 
 
-driver.execute_script(open("C:\\Users\\Naman\\Desktop\\Scraper\\value.js").read())
+driver.execute_script(open("#Location_of_value.js").read())
 
 driver.find_element_by_name("passwd").send_keys(Keys.ENTER)
 
@@ -147,8 +144,6 @@ elif(valve == 1):
 	#For this week's Saturday
 	path_holder1 = driver.find_element_by_xpath(path1)
 	path_holder1.click()
-	
-	
 
 	#Apply button click
 	apply_holder = driver.find_element_by_xpath("/html/body/table/tbody/tr/td[2]/form/table/tbody/tr[14]/td/input[1]")
