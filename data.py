@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import datetime
 from selenium import webdriver
 
-driver = webdriver.Chrome(executable_path='C:\\Users\\Naman\\Desktop\\Scraper\\chromedriver.exe')
+driver = webdriver.Chrome(executable_path='#Location of chromedriver.exe')
 
 options = webdriver.ChromeOptions()
 
@@ -24,7 +24,7 @@ pyautogui.typewrite('#Your Registration Number')
 pyautogui.click(x=950,y=421)
 pyautogui.typewrite('#Your Password')
 
-driver.execute_script(open("C:\\Users\\Naman\\Desktop\\Scraper\\value.js").read())
+driver.execute_script(open("#Location of value.js").read())
 
 day_of_month = datetime.datetime.now().day
 week_number = (day_of_month - 1) // 7 + 1
