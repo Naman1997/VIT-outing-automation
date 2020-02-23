@@ -1,4 +1,3 @@
-import pyautogui
 from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
@@ -65,13 +64,14 @@ def time_fill():
 
 day_of_month = datetime.datetime.now().day
 week_number = (day_of_month - 1) // 7 + 1
-week_number +=1
+week_number +=2
 path1 ='//*[@id="calBorder"]/span/table/tbody/tr[2]/td/table/tbody/tr['+str(week_number)+']/td[6]'
+			# //*[@id="calBorder"]/span/table/tbody/tr[2]/td/table/tbody/tr[5]/td[6]
 path2 ='//*[@id="calBorder"]/span/table/tbody/tr[2]/td/table/tbody/tr['+str(week_number)+']/td[7]'
 
 valve = int(input("2 for both saturday and sunday, 1 for saturday and 0 for sunday : "))
 print(valve)
-driver = webdriver.Chrome(executable_path='#Location_of_chromedriver.exe')
+driver = webdriver.Chrome(executable_path='/home/ironheart/Documents/Github/VIT-outing-automation/chromedriver')
 
 options = webdriver.ChromeOptions()
 
@@ -83,14 +83,14 @@ alert_obj = driver.switch_to.alert
 alert_obj.accept()
 
 regno = driver.find_element_by_name("regno")
-regno.send_keys("#Your_regno")
+regno.send_keys("16BLC1030")
 
 
 passw = driver.find_element_by_name("passwd")
-passw.send_keys("#Your_password")
+passw.send_keys("United@123")
 
 
-driver.execute_script(open("#Location_of_value.js").read())
+driver.execute_script(open("/home/ironheart/Documents/Github/VIT-outing-automation/value.js").read())
 
 driver.find_element_by_name("passwd").send_keys(Keys.ENTER)
 
